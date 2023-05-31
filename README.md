@@ -68,19 +68,19 @@ Uygulamada çeşitli test senaryolarını kapsayan testler yer alır. Bu testler
 ## Görseller
 ![Görsel 1](https://github.com/fatihCetiner/AndroidTesting/assets/53433157/3e1474c4-e7af-4752-8988-4b8142553c41)
 
-Kayıt Edilen Veri sağa veya sola kaydırarak silebilirsiniz.
+- Kayıt Edilen Veri sağa veya sola kaydırarak silebilirsiniz.
 
 ![Görsel 2](https://github.com/fatihCetiner/AndroidTesting/assets/53433157/88d569c7-3880-469f-9c26-193b6dbdde64)
 
-Kayıt Edilen veri anasayfada alt alta bilgileri ile listelenir
+- Kayıt Edilen veri anasayfada alt alta bilgileri ile listelenir
 
 ![Görsel 3](https://github.com/fatihCetiner/AndroidTesting/assets/53433157/836f9176-ff3e-4abd-89c8-8a7e34bbef17)
 
-Resim seçildikden sonra bu sayfada kalan değerleri girebilirsiniz
+- Resim seçildikden sonra bu sayfada kalan değerleri girebilirsiniz
 
 ![Görsel 4](https://github.com/fatihCetiner/AndroidTesting/assets/53433157/6729a17f-d52f-4468-b884-6eefbd285bd4)
 
-Arama kutusundan istediğiniz resmi aratarak çıkan sonuçlardan birini seçebilirsiniz
+- Arama kutusundan istediğiniz resmi aratarak çıkan sonuçlardan birini seçebilirsiniz
 
 
 ## Katkıda Bulunma
