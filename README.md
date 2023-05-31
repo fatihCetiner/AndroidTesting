@@ -61,6 +61,23 @@ response.enqueue(object : Callback<ImageResponse> {
 ## Testler
 Uygulamada çeşitli test senaryolarını kapsayan testler yer alır. Bu testler, Mockito ve Espresso test framework'leri kullanılarak yazılmıştır. Testlerin başarılı bir şekilde çalışması için aşağıdaki adımları takip edin:
 
+## Görseller
+![Görsel 1](https://github.com/fatihCetiner/AndroidTesting/assets/53433157/3e1474c4-e7af-4752-8988-4b8142553c41)
+
+Kayıt Edilen Veri sağa veya sola kaydırarak silebilirsiniz.
+
+![Görsel 2](https://github.com/fatihCetiner/AndroidTesting/assets/53433157/88d569c7-3880-469f-9c26-193b6dbdde64)
+
+Kyıt Edilen veri anasayfada alt alta bilgileri ile listelenir
+
+![Görsel 3](https://github.com/fatihCetiner/AndroidTesting/assets/53433157/836f9176-ff3e-4abd-89c8-8a7e34bbef17)
+
+Resim seçildikden sonra bu sayfada kalan değerleri girebilirsiniz
+
+![Görsel 4](https://github.com/fatihCetiner/AndroidTesting/assets/53433157/6729a17f-d52f-4468-b884-6eefbd285bd4)
+
+Arama kutusundan istediğiniz resmi aratarak çıkan sonuçlardan birini seçebilirsiniz
+
 1. Test senaryolarını çalıştırmadan önce emulatorü veya fiziksel cihazı başlatın.
 2. Testlerin bulunduğu test klasöründe sağ tıklayın ve "Run Tests" seçeneğini seçin.
 3. Testlerin başarılı bir şekilde çalıştığını gözlemleyin ve sonuçları analiz edin.
