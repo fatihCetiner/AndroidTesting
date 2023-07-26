@@ -2,8 +2,9 @@ package com.fatihcetiner.artbooktesting.repo
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.fatihcetiner.artbooktesting.model.ImageResponse
-import com.fatihcetiner.artbooktesting.roomdb.Art
+import com.fatihcetiner.artbooktesting.data.repository.ArtRepositoryInterface
+import com.fatihcetiner.artbooktesting.core.model.ImageResponse
+import com.fatihcetiner.artbooktesting.core.model.Art
 import com.fatihcetiner.artbooktesting.util.Resource
 
 class FakeArtRepository : ArtRepositoryInterface {

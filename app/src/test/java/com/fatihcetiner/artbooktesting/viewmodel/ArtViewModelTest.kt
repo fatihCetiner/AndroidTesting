@@ -4,6 +4,7 @@ import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.fatihcetiner.artbooktesting.MainCoroutineRule
 import com.fatihcetiner.artbooktesting.getOrAwaitValueTest
 import com.fatihcetiner.artbooktesting.repo.FakeArtRepository
+import com.fatihcetiner.artbooktesting.ui.viewmodel.ArtViewModel
 import com.fatihcetiner.artbooktesting.util.Status
 import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.ExperimentalCoroutinesApi

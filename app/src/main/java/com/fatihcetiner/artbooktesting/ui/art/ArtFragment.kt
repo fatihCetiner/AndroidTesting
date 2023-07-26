@@ -1,4 +1,4 @@
-package com.fatihcetiner.artbooktesting.view
+package com.fatihcetiner.artbooktesting.ui.art
 
 import android.os.Bundle
 import android.view.View
@@ -10,9 +10,9 @@ import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.fatihcetiner.artbooktesting.R
-import com.fatihcetiner.artbooktesting.adapter.ArtRecyclerAdapter
+import com.fatihcetiner.artbooktesting.ui.art.adapter.ArtRecyclerAdapter
 import com.fatihcetiner.artbooktesting.databinding.FragmentArtsBinding
-import com.fatihcetiner.artbooktesting.viewmodel.ArtViewModel
+import com.fatihcetiner.artbooktesting.ui.viewmodel.ArtViewModel
 import javax.inject.Inject
 
 class ArtFragment @Inject constructor(

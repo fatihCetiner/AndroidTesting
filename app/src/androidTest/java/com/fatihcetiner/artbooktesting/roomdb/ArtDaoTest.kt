@@ -1,16 +1,16 @@
 package com.fatihcetiner.artbooktesting.roomdb
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
-import androidx.room.Room
-import androidx.test.core.app.ApplicationProvider
 import androidx.test.filters.SmallTest
+import com.fatihcetiner.artbooktesting.core.model.Art
+import com.fatihcetiner.artbooktesting.data.local.ArtDao
+import com.fatihcetiner.artbooktesting.data.local.ArtDatabase
 import com.fatihcetiner.artbooktesting.getOrAwaitValue
 import com.google.common.truth.Truth.assertThat
 import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.runBlocking
-import kotlinx.coroutines.test.runBlockingTest
 import org.junit.After
 import org.junit.Before
 import org.junit.Rule

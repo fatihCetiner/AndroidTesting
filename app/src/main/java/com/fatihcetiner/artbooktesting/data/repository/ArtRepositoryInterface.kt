@@ -1,8 +1,8 @@
-package com.fatihcetiner.artbooktesting.repo
+package com.fatihcetiner.artbooktesting.data.repository
 
 import androidx.lifecycle.LiveData
-import com.fatihcetiner.artbooktesting.model.ImageResponse
-import com.fatihcetiner.artbooktesting.roomdb.Art
+import com.fatihcetiner.artbooktesting.core.model.ImageResponse
+import com.fatihcetiner.artbooktesting.core.model.Art
 import com.fatihcetiner.artbooktesting.util.Resource
 
 interface ArtRepositoryInterface {

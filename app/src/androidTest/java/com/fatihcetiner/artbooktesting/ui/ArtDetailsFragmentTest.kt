@@ -1,6 +1,6 @@
-package com.fatihcetiner.artbooktesting.view
+package com.fatihcetiner.artbooktesting.ui
 
-import androidx.fragment.app.FragmentFactory
+import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.test.espresso.Espresso
@@ -9,8 +9,11 @@ import androidx.test.espresso.matcher.ViewMatchers
 import androidx.test.filters.MediumTest
 import com.fatihcetiner.artbooktesting.R
 import com.fatihcetiner.artbooktesting.launchFragmentInHiltContainer
+import com.fatihcetiner.artbooktesting.ui.art.ArtFragmentFactory
+import com.fatihcetiner.artbooktesting.ui.artDetail.ArtDetailsFragment
 import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest
+import kotlinx.coroutines.ExperimentalCoroutinesApi
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
@@ -19,11 +22,14 @@ import javax.inject.Inject
 
 @MediumTest
 @HiltAndroidTest
-class ArtFragmentTest {
-
+@ExperimentalCoroutinesApi
+class ArtDetailsFragmentTest {
 
     @get:Rule
     var hiltRule = HiltAndroidRule(this)
+
+    @get:Rule
+    val instantTaskExecutorRule = InstantTaskExecutorRule()
 
     @Inject
     lateinit var fragmentFactory: ArtFragmentFactory
@@ -34,19 +40,26 @@ class ArtFragmentTest {
     }
 
     @Test
-    fun testNavigationFromArtToArtDetails(){
-
+    fun testNavigationFromArtDetailsToImageAPI(){
         val navController = Mockito.mock(NavController::class.java)
-
-        launchFragmentInHiltContainer<ArtFragment>(
-            factory = fragmentFactory
-        ){
+        launchFragmentInHiltContainer<ArtDetailsFragment>(factory = fragmentFactory){
             Navigation.setViewNavController(requireView(),navController)
+
         }
 
-        Espresso.onView(ViewMatchers.withId(R.id.fab)).perform(click())
+        Espresso.onView(ViewMatchers.withId(R.id.artImageView)).perform(click())
         Mockito.verify(navController).navigate(
-            ArtFragmentDirections.actionArtFragmentToArtDetailsFragment()
+            ArtDetailsFragmentDirections.actionArtDetailsFragmentToImageApiFragment()
         )
     }
+
+    @Test
+    fun testOnBackPressed(){
+        val navController = Mockito.mock(NavController::class.java)
+        launchFragmentInHiltContainer<ArtDetailsFragment>(factory = fragmentFactory){
+            Navigation.setViewNavController(requireView(),navController)
+
+        }
+    }
+
 }

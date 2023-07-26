@@ -1,6 +1,6 @@
-package com.fatihcetiner.artbooktesting.api
+package com.fatihcetiner.artbooktesting.data.remote
 
-import com.fatihcetiner.artbooktesting.model.ImageResponse
+import com.fatihcetiner.artbooktesting.core.model.ImageResponse
 import com.fatihcetiner.artbooktesting.util.Util.API_KEY
 import retrofit2.Response
 import retrofit2.http.GET

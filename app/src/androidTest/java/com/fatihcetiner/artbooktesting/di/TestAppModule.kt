@@ -2,7 +2,7 @@ package com.fatihcetiner.artbooktesting.di
 
 import android.content.Context
 import androidx.room.Room
-import com.fatihcetiner.artbooktesting.roomdb.ArtDatabase
+import com.fatihcetiner.artbooktesting.data.local.ArtDatabase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

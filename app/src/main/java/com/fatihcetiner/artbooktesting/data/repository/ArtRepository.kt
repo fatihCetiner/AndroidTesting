@@ -1,17 +1,17 @@
-package com.fatihcetiner.artbooktesting.repo
+package com.fatihcetiner.artbooktesting.data.repository
 
 import androidx.lifecycle.LiveData
-import com.fatihcetiner.artbooktesting.api.RetrofitAPI
-import com.fatihcetiner.artbooktesting.model.ImageResponse
-import com.fatihcetiner.artbooktesting.roomdb.Art
-import com.fatihcetiner.artbooktesting.roomdb.ArtDao
+import com.fatihcetiner.artbooktesting.data.remote.RetrofitAPI
+import com.fatihcetiner.artbooktesting.core.model.ImageResponse
+import com.fatihcetiner.artbooktesting.core.model.Art
+import com.fatihcetiner.artbooktesting.data.local.ArtDao
 import com.fatihcetiner.artbooktesting.util.Resource
 import javax.inject.Inject
 
 class ArtRepository @Inject constructor(
     private val artDao: ArtDao,
     private val retrofitAPI: RetrofitAPI
-    ) : ArtRepositoryInterface{
+    ) : ArtRepositoryInterface {
 
     override suspend fun insertArt(art: Art) {
         artDao.insertArt(art)

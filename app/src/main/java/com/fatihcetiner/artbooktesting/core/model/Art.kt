@@ -1,4 +1,4 @@
-package com.fatihcetiner.artbooktesting.roomdb
+package com.fatihcetiner.artbooktesting.core.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

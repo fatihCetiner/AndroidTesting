@@ -1,4 +1,4 @@
-package com.fatihcetiner.artbooktesting.view
+package com.fatihcetiner.artbooktesting.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,6 +7,7 @@ import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.ui.NavigationUI
 import com.fatihcetiner.artbooktesting.R
+import com.fatihcetiner.artbooktesting.ui.art.ArtFragmentFactory
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 

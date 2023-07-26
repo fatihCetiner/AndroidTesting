@@ -1,4 +1,4 @@
-package com.fatihcetiner.artbooktesting.view
+package com.fatihcetiner.artbooktesting.ui.imagelist
 
 import android.os.Bundle
 import android.view.View
@@ -10,12 +10,11 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
-import com.bumptech.glide.RequestManager
 import com.fatihcetiner.artbooktesting.R
-import com.fatihcetiner.artbooktesting.adapter.ImageRecyclerAdapter
+import com.fatihcetiner.artbooktesting.ui.imagelist.adapter.ImageRecyclerAdapter
 import com.fatihcetiner.artbooktesting.databinding.FragmentImageApiBinding
 import com.fatihcetiner.artbooktesting.util.Status
-import com.fatihcetiner.artbooktesting.viewmodel.ArtViewModel
+import com.fatihcetiner.artbooktesting.ui.viewmodel.ArtViewModel
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch

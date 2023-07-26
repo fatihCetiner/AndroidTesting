@@ -1,4 +1,4 @@
-package com.fatihcetiner.artbooktesting.view
+package com.fatihcetiner.artbooktesting.ui.artDetail
 
 import android.os.Bundle
 import android.view.View
@@ -12,7 +12,7 @@ import com.bumptech.glide.RequestManager
 import com.fatihcetiner.artbooktesting.R
 import com.fatihcetiner.artbooktesting.databinding.FragmentArtDetailsBinding
 import com.fatihcetiner.artbooktesting.util.Status
-import com.fatihcetiner.artbooktesting.viewmodel.ArtViewModel
+import com.fatihcetiner.artbooktesting.ui.viewmodel.ArtViewModel
 import javax.inject.Inject
 
 class ArtDetailsFragment @Inject constructor(

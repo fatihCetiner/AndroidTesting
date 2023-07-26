@@ -1,10 +1,12 @@
-package com.fatihcetiner.artbooktesting.view
+package com.fatihcetiner.artbooktesting.ui.art
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentFactory
 import com.bumptech.glide.RequestManager
-import com.fatihcetiner.artbooktesting.adapter.ArtRecyclerAdapter
-import com.fatihcetiner.artbooktesting.adapter.ImageRecyclerAdapter
+import com.fatihcetiner.artbooktesting.ui.art.adapter.ArtRecyclerAdapter
+import com.fatihcetiner.artbooktesting.ui.imagelist.adapter.ImageRecyclerAdapter
+import com.fatihcetiner.artbooktesting.ui.artDetail.ArtDetailsFragment
+import com.fatihcetiner.artbooktesting.ui.imagelist.ImageApiFragment
 import javax.inject.Inject
 
 class ArtFragmentFactory @Inject constructor(

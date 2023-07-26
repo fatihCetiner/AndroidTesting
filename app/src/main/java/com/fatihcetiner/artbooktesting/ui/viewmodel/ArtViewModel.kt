@@ -1,16 +1,15 @@
-package com.fatihcetiner.artbooktesting.viewmodel
+package com.fatihcetiner.artbooktesting.ui.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.fatihcetiner.artbooktesting.model.ImageResponse
-import com.fatihcetiner.artbooktesting.repo.ArtRepositoryInterface
-import com.fatihcetiner.artbooktesting.roomdb.Art
+import com.fatihcetiner.artbooktesting.core.model.ImageResponse
+import com.fatihcetiner.artbooktesting.data.repository.ArtRepositoryInterface
+import com.fatihcetiner.artbooktesting.core.model.Art
 import com.fatihcetiner.artbooktesting.util.Resource
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
-import java.util.SplittableRandom
 import javax.inject.Inject
 
 @HiltViewModel

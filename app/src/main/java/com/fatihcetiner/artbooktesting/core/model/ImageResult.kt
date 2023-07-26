@@ -1,4 +1,4 @@
-package com.fatihcetiner.artbooktesting.model
+package com.fatihcetiner.artbooktesting.core.model
 
 import com.google.gson.annotations.SerializedName
 

@@ -1,4 +1,4 @@
-package com.fatihcetiner.artbooktesting.adapter
+package com.fatihcetiner.artbooktesting.ui.art.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -8,10 +8,9 @@ import android.widget.TextView
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
 import com.bumptech.glide.RequestManager
 import com.fatihcetiner.artbooktesting.R
-import com.fatihcetiner.artbooktesting.roomdb.Art
+import com.fatihcetiner.artbooktesting.core.model.Art
 import javax.inject.Inject
 
 class ArtRecyclerAdapter @Inject constructor(
